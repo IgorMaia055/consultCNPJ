@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar CNPJ</title>
+    <link rel="shortcut icon" href="./assets/img/icons8-pesquisar-na-nuvem-100.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap-5.3.2-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4" src="./assets/img/icons8-pesquisar-na-nuvem-100.png" alt="">
+            <h3 class="display-5 fw-bold text-body-emphasis">Consulte um CNPJ</h3>
+            <div class="col-lg-6 mx-auto">
+                <input type="text" class="form-control mt-5" placeholder="Informe aqui o CNPJ"
+                    id="cnpj" maxlength="18">
+
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3" id="btnConsultar" onclick="consultarCNPJ()">Consultar</button>
+                </div>
+            </div>
+
+            <div class="mt-5 text-start" id="resut" hidden>
+                <p style="color: rgb(20, 204, 66); font-weight: 600;">Resultado</p>
+                <table class="table table-striped mt-3">
+                    <tbody>
+                      
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./assets/js/format.js"></script>
+
+</html>
